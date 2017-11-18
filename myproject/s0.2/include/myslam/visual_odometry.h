@@ -79,7 +79,8 @@ protected:
     void extractKeyPoints();
     void computeDescriptors(); 
     void featureMatching();
-    void poseEstimationPnP(); 
+    void poseEstimationPnP();
+    void poseEstimationPnP2();
     void setRef3DPoints();
     
     void addKeyFrame();

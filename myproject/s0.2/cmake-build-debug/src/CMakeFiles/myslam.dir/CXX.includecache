@@ -66,31 +66,31 @@ myslam/map.h
 opencv2/features2d/features2d.hpp
 -
 
-/home/yehoo/projects/myproject/s0.2/src/camera.cpp
+/home/yehoo/project/myproject/s0.2/src/camera.cpp
 myslam/camera.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/camera.h
+/home/yehoo/project/myproject/s0.2/src/myslam/camera.h
 myslam/config.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/config.h
+/home/yehoo/project/myproject/s0.2/src/myslam/config.h
 
-/home/yehoo/projects/myproject/s0.2/src/config.cpp
+/home/yehoo/project/myproject/s0.2/src/config.cpp
 myslam/config.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/config.h
+/home/yehoo/project/myproject/s0.2/src/myslam/config.h
 
-/home/yehoo/projects/myproject/s0.2/src/frame.cpp
+/home/yehoo/project/myproject/s0.2/src/frame.cpp
 myslam/frame.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/frame.h
+/home/yehoo/project/myproject/s0.2/src/myslam/frame.h
 
-/home/yehoo/projects/myproject/s0.2/src/map.cpp
+/home/yehoo/project/myproject/s0.2/src/map.cpp
 myslam/map.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/map.h
+/home/yehoo/project/myproject/s0.2/src/myslam/map.h
 
-/home/yehoo/projects/myproject/s0.2/src/mappoint.cpp
+/home/yehoo/project/myproject/s0.2/src/mappoint.cpp
 myslam/common_include.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/common_include.h
+/home/yehoo/project/myproject/s0.2/src/myslam/common_include.h
 myslam/mappoint.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/mappoint.h
+/home/yehoo/project/myproject/s0.2/src/myslam/mappoint.h
 
-/home/yehoo/projects/myproject/s0.2/src/visual_odometry.cpp
+/home/yehoo/project/myproject/s0.2/src/visual_odometry.cpp
 opencv2/aruco.hpp
 -
 opencv2/aruco/charuco.hpp
@@ -105,10 +105,14 @@ algorithm
 -
 boost/timer.hpp
 -
+myslam/mappoint.h
+/home/yehoo/project/myproject/s0.2/src/myslam/mappoint.h
+myslam/map.h
+/home/yehoo/project/myproject/s0.2/src/myslam/map.h
 myslam/config.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/config.h
+/home/yehoo/project/myproject/s0.2/src/myslam/config.h
 myslam/visual_odometry.h
-/home/yehoo/projects/myproject/s0.2/src/myslam/visual_odometry.h
+/home/yehoo/project/myproject/s0.2/src/myslam/visual_odometry.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

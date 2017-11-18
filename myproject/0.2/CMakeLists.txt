@@ -16,8 +16,12 @@ include_directories( "/usr/include/eigen3" )
 find_package( OpenCV 3.1 REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 # Sophus 
-find_package( Sophus REQUIRED )
-include_directories( ${Sophus_INCLUDE_DIRS} )
+#find_package( Sophus REQUIRED )
+#include_directories( ${Sophus_INCLUDE_DIRS} )
+# Sophus
+include_directories( /home/yehoo/road/Sophus )
+#target_link_libraries(useSophus libSophus.so)
+link_libraries("/home/yehoo/road/Sophus/build/libSophus.so")
 # G2O
 find_package( G2O REQUIRED )
 include_directories( ${G2O_INCLUDE_DIRS} )

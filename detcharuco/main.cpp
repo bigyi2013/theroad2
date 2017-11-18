@@ -175,9 +175,8 @@ int main() {
                     bool valid = cv::aruco::estimatePoseCharucoBoard(charucoCorners, charucoIds, board, cameraMatrix,
                                                                      distCoeffs, rvec, tvec);
 			
-					valid=newyehoo(charucoCorners, charucoIds, board, cameraMatrix,
-                                                                     distCoeffs, rvec, tvec);
-					//std::cout<<objPoints<<std::endl;
+					//valid=newyehoo(charucoCorners, charucoIds, board, cameraMatrix,   distCoeffs, rvec, tvec);
+					std::cout<<charucoIds.size()<<std::endl;
                     // if charuco pose is valid
                     if (valid) {
 

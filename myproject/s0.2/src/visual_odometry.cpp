@@ -77,11 +77,22 @@ namespace myslam {
                 cv::aruco::interpolateCornersCharuco(corners, ids, imagecopy, board, charucoCorners, charucoIds,
                                                      cameraMatrix, distCoeffs);
                 if (charucoIds.size() > 3) {
-                    //更改T_c_w,将tvec和rvec保存
+
+                    myslam::MapPoint::Ptr mappoint3 = myslam::MapPoint::createMapPoint();
+                    myslam::MapPoint::Ptr mappoint(new myslam::MapPoint);
                     //保存charucoids（boardnum）
-                    //保存camera ids
-                    //保存objcorner
+                    mappoint->boardnum=boardnum;
+                    //保存objcorne
+                    mappoint-> mygetobjpoints();
                     //保存imgcorner
+                    mappoint->mygetimgpoints();
+                    //计算pnp更改T_c_w,将tvec和rvec保存
+                    Mat rvec, tvec, inliers;
+                    cv::solvePnPRansac(mappoint->objpoints,mappoint->imgpoints, cameraMatrix, distCoeffs, rvec, tvec, false, 100, 4.0, 0.99, inliers);
+                    T_c_r_estimated_ = SE3(
+                            SO3(rvec.at<double>(0, 0), rvec.at<double>(1, 0), rvec.at<double>(2, 0)),
+                            Vector3d(tvec.at<double>(0, 0), tvec.at<double>(1, 0), tvec.at<double>(2, 0))
+                    );
                     state_ = OK;
                 } else {
                     state_ = LOST;
@@ -91,15 +102,20 @@ namespace myslam {
 
     }
 
-    bool VisualOdometry::addFrame(Frame::Ptr frame) {
+    bool VisualOdometry:: addFrame(Frame::Ptr frame) {
         switch (state_) {
             case OK: {
                 curr_ = ref_ = frame;
                 map_->insertKeyFrame(frame);
+                //保存objcorner
+                //保存imgcorner
+                //计算pnp更改T_c_w,将tvec和rvec保存
+                //保存charucoids（boardnum）
+                //保存camera ids
 
             }
             case LOST: {
-
+                break;
 
             }
             default:

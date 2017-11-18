@@ -1,4 +1,4 @@
-# Install script for directory: /home/yehoo/projects/myproject/s0.2/src
+# Install script for directory: /home/yehoo/project/myproject/s0.2/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

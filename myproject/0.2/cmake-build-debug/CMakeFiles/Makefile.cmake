@@ -34,7 +34,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/yehoo/road/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/Linux.cmake"
   "/home/yehoo/road/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/UnixPaths.cmake"
   "/home/yehoo/road/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/ProcessorCount.cmake"
-  "/usr/local/lib/cmake/Sophus/SophusConfig.cmake"
   "/usr/local/share/OpenCV/OpenCVConfig-version.cmake"
   "/usr/local/share/OpenCV/OpenCVConfig.cmake"
   "/usr/local/share/OpenCV/OpenCVModules-release.cmake"

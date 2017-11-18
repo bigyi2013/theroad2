@@ -66,7 +66,7 @@ myslam/map.h
 opencv2/features2d/features2d.hpp
 -
 
-/home/yehoo/projects/myproject/0.2/test/run_vo.cpp
+/home/yehoo/project/myproject/0.2/test/run_vo.cpp
 fstream
 -
 boost/timer.hpp
@@ -78,9 +78,9 @@ opencv2/highgui/highgui.hpp
 opencv2/viz.hpp
 -
 myslam/config.h
-/home/yehoo/projects/myproject/0.2/test/myslam/config.h
+/home/yehoo/project/myproject/0.2/test/myslam/config.h
 myslam/visual_odometry.h
-/home/yehoo/projects/myproject/0.2/test/myslam/visual_odometry.h
+/home/yehoo/project/myproject/0.2/test/myslam/visual_odometry.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

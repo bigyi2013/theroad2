@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yehoo/projects/myproject/s0.2/src/camera.cpp" "/home/yehoo/projects/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/camera.cpp.o"
-  "/home/yehoo/projects/myproject/s0.2/src/config.cpp" "/home/yehoo/projects/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/config.cpp.o"
-  "/home/yehoo/projects/myproject/s0.2/src/frame.cpp" "/home/yehoo/projects/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/frame.cpp.o"
-  "/home/yehoo/projects/myproject/s0.2/src/map.cpp" "/home/yehoo/projects/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/map.cpp.o"
-  "/home/yehoo/projects/myproject/s0.2/src/mappoint.cpp" "/home/yehoo/projects/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/mappoint.cpp.o"
-  "/home/yehoo/projects/myproject/s0.2/src/visual_odometry.cpp" "/home/yehoo/projects/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/visual_odometry.cpp.o"
+  "/home/yehoo/project/myproject/s0.2/src/camera.cpp" "/home/yehoo/project/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/camera.cpp.o"
+  "/home/yehoo/project/myproject/s0.2/src/config.cpp" "/home/yehoo/project/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/config.cpp.o"
+  "/home/yehoo/project/myproject/s0.2/src/frame.cpp" "/home/yehoo/project/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/frame.cpp.o"
+  "/home/yehoo/project/myproject/s0.2/src/map.cpp" "/home/yehoo/project/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/map.cpp.o"
+  "/home/yehoo/project/myproject/s0.2/src/mappoint.cpp" "/home/yehoo/project/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/mappoint.cpp.o"
+  "/home/yehoo/project/myproject/s0.2/src/visual_odometry.cpp" "/home/yehoo/project/myproject/s0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/visual_odometry.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

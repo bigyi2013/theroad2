@@ -27,21 +27,6 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-//    vector<string> rgb_files, depth_files;
-//    vector<double> rgb_times, depth_times;
-//    while ( !fin.eof() )
-//    {
-//        string rgb_time, rgb_file, depth_time, depth_file;
-//        fin>>rgb_time>>rgb_file>>depth_time>>depth_file;
-//        rgb_times.push_back ( atof ( rgb_time.c_str() ) );
-//        depth_times.push_back ( atof ( depth_time.c_str() ) );
-//        rgb_files.push_back ( dataset_dir+"/"+rgb_file );
-//        depth_files.push_back ( dataset_dir+"/"+depth_file );
-//
-//        if ( fin.good() == false )
-//            break;
-//    }
-
     myslam::Camera::Ptr camera(new myslam::Camera);
 
     // visualization
@@ -68,11 +53,6 @@ int main(int argc, char **argv) {
     //grab(),从视频文件或捕获设备抓取下一个帧。
     while (inputVideo.grab()) {
         cv::Mat image;
-//        bool valid;
-//        inputVideo.retrieve(image);
-//        valid = charuco(image);
-//        if (!valid)
-//            return 1;
         //寻找二维码,while找到二维码
         myslam::Frame::Ptr pFrame = myslam::Frame::createFrame();
         pFrame->camera_ = camera;

@@ -9,7 +9,7 @@ test/CMakeFiles/run_vo.dir/run_vo.cpp.o
  ../include/myslam/map.h
  ../include/myslam/mappoint.h
  ../include/myslam/visual_odometry.h
- /home/yehoo/projects/myproject/0.2/test/run_vo.cpp
+ /home/yehoo/project/myproject/0.2/test/run_vo.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Geometry
