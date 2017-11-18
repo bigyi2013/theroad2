@@ -1,0 +1,3 @@
+/home/yehoo/projects/ARUCO/build/CMakeFiles/edit_cache.dir
+/home/yehoo/projects/ARUCO/build/CMakeFiles/rebuild_cache.dir
+/home/yehoo/projects/ARUCO/build/CMakeFiles/aruco.dir

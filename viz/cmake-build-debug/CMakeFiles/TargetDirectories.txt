@@ -1,0 +1,3 @@
+/home/yehoo/projects/viz/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yehoo/projects/viz/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yehoo/projects/viz/cmake-build-debug/CMakeFiles/viz.dir
