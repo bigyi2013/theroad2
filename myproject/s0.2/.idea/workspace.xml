@@ -13,51 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14d5e745-230c-43d3-a70a-d86e4566141b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/CMakeFiles/Progress/1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/CMakeFiles/Progress/2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/CMakeFiles/Progress/3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/CMakeFiles/Progress/4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/CMakeFiles/Progress/count.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/main.cpp.o" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/detcharuco" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/detcharuco" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/visual_odometry.cpp.o" afterPath="$PROJECT_DIR$/../0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/visual_odometry.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/lib/libmyslam.so" afterPath="$PROJECT_DIR$/../0.2/lib/libmyslam.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/run_vo" afterPath="$PROJECT_DIR$/bin/run_vo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/run_vo.dir/run_vo.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/run_vo.dir/run_vo.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/libmyslam.so" afterPath="$PROJECT_DIR$/lib/libmyslam.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../s0.3/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../s0.3/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../s0.3/.idea/s0.3.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ARUCO/main.cpp" afterPath="$PROJECT_DIR$/../../ARUCO/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../detcharuco/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/CXX.includecache" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/build.make" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/depend.internal" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/cmake_install.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/detcharuco.cbp" afterPath="$PROJECT_DIR$/../../detcharuco/cmake-build-debug/detcharuco.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../detcharuco/main.cpp" afterPath="$PROJECT_DIR$/../../detcharuco/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../0.2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/CXX.includecache" afterPath="$PROJECT_DIR$/../0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/depend.internal" afterPath="$PROJECT_DIR$/../0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/depend.make" afterPath="$PROJECT_DIR$/../0.2/cmake-build-debug/src/CMakeFiles/myslam.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/config/default.yaml" afterPath="$PROJECT_DIR$/../0.2/config/default.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/src/visual_odometry.cpp" afterPath="$PROJECT_DIR$/../0.2/src/visual_odometry.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/myslam.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/myslam.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/run_vo.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/run_vo.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/run_vo.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/run_vo.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/run_vo.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/run_vo.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/myslam/mappoint.h" afterPath="$PROJECT_DIR$/include/myslam/mappoint.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/myslam/visual_odometry.h" afterPath="$PROJECT_DIR$/include/myslam/visual_odometry.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mappoint.cpp" afterPath="$PROJECT_DIR$/src/mappoint.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/visual_odometry.cpp" afterPath="$PROJECT_DIR$/src/visual_odometry.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/run_vo.cpp" afterPath="$PROJECT_DIR$/test/run_vo.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../pnp2/Eigen/src/SparseCore/SparseBlock.h" afterPath="$PROJECT_DIR$/../../pnp2/Eigen/src/SparseCore/SparseBlock.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../pnp2/main.cpp" afterPath="$PROJECT_DIR$/../../pnp2/main.cpp" />
     </list>
@@ -71,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run_vo.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run_vo.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/run_vo.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="373">
+              <caret line="51" column="35" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="51" selection-end-column="35" />
               <folding>
                 <element signature="e#57#75#0" expanded="true" />
               </folding>
@@ -83,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visual_odometry.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="visual_odometry.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/visual_odometry.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="111" column="28" lean-forward="false" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+            <state relative-caret-position="76">
+              <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
               <folding>
                 <element signature="e#784#812#0" expanded="true" />
                 <element signature="e#1890#2246#0" expanded="false" />
@@ -100,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/include/myslam/visual_odometry.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+              <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -166,7 +127,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
+    <option name="x" value="45" />
     <option name="y" value="-4" />
     <option name="width" value="1533" />
     <option name="height" value="904" />
@@ -220,7 +181,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../0.2/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../s0.3/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -270,7 +231,7 @@
       <workItem from="1510973521887" duration="9000" />
       <workItem from="1510974969423" duration="4078000" />
       <workItem from="1510985420620" duration="20590000" />
-      <workItem from="1511066186493" duration="11054000" />
+      <workItem from="1511066186493" duration="12654000" />
     </task>
     <task id="LOCAL-00001" summary="重构中">
       <created>1510995328304</created>
@@ -300,11 +261,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510995446074</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="找到李代数和轴角之间的关系了，只有在t=0附近有效。">
+      <created>1511096481048</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511096481048</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53548000" />
+    <option name="totallyTimeSpent" value="55148000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -317,7 +285,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-4" width="1533" height="904" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34419817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -325,7 +292,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3320849" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3320849" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -371,7 +338,8 @@
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
     <MESSAGE value="重构中" />
     <MESSAGE value="重写程序中" />
-    <option name="LAST_COMMIT_MESSAGE" value="重写程序中" />
+    <MESSAGE value="找到李代数和轴角之间的关系了，只有在t=0附近有效。" />
+    <option name="LAST_COMMIT_MESSAGE" value="找到李代数和轴角之间的关系了，只有在t=0附近有效。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -562,6 +530,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="385" column="52" lean-forward="false" selection-start-line="385" selection-start-column="52" selection-end-line="385" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -576,6 +545,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -598,6 +568,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3144">
           <caret line="213" column="10" lean-forward="false" selection-start-line="213" selection-start-column="10" selection-end-line="213" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,6 +626,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="e#785#819#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,6 +636,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="37" column="60" lean-forward="true" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -732,28 +707,28 @@
     <entry file="file://$PROJECT_DIR$/include/myslam/visual_odometry.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+          <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/run_vo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="e#57#75#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/visual_odometry.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="111" column="28" lean-forward="false" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+        <state relative-caret-position="76">
+          <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
           <folding>
             <element signature="e#784#812#0" expanded="true" />
             <element signature="e#1890#2246#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/run_vo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="e#57#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
