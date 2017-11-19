@@ -33,36 +33,9 @@ namespace myslam {
         Mat descriptor_; // Descriptor for matching
         int observed_times_;    // being observed by feature matching algo.
         int matched_times_;     // being an inliner in pose estimation
-        int boardnum;
-        vector<cv::Point3f> objpoints;
-        vector<cv::Point2f> imgpoints;
-        std::vector<int> charucoIds;
-        std::vector<cv::Point2f> charucoCorners;
-        double boardsize = 0.055;
-        cv::Mat board = (cv::Mat_<double>(24, 3) << boardsize, boardsize, 0, 2 * boardsize, boardsize, 0, boardsize, 2 *
-                                                                                                                     boardsize, 0,
-                2 * boardsize, 2 * boardsize, 0, boardsize, 3 * boardsize, 0, 2 * boardsize, 3 *
-                                                                                             boardsize, 0, boardsize,
-                4 * boardsize, 0, 2 * boardsize, 4 * boardsize, 0,
-                boardsize, boardsize, 0, 2 * boardsize, boardsize, 0, boardsize, 2 * boardsize, 0, 2 * boardsize, 2 *
-                                                                                                                  boardsize, 0, boardsize,
-                3 * boardsize, 0, 2 * boardsize, 3 * boardsize, 0, boardsize, 4 * boardsize, 0, 2 * boardsize, 4 *
-                                                                                                               boardsize, 0,
-                boardsize, boardsize, 0, 2 * boardsize, boardsize, 0, boardsize, 2 * boardsize, 0, 2 * boardsize, 2 *
-                                                                                                                  boardsize, 0, boardsize,
-                3 * boardsize, 0, 2 * boardsize, 3 * boardsize, 0, boardsize, 4 * boardsize, 0, 2 * boardsize, 4 *
-                                                                                                               boardsize, 0);
-
-        //cv::Mat<double, 8, 3> board2=(boardsize,boardsize,0,2*boardsize,boardsize,0,boardsize,2*boardsize,0,2*boardsize,2*boardsize,0,boardsize,3*boardsize,0,2*boardsize,3*boardsize,0,boardsize,4*boardsize,0,2*boardsize,4*boardsize,0);
-        //cv::Mat<double, 8, 3> board3=(boardsize,boardsize,0,2*boardsize,boardsize,0,boardsize,2*boardsize,0,2*boardsize,2*boardsize,0,boardsize,3*boardsize,0,2*boardsize,3*boardsize,0,boardsize,4*boardsize,0,2*boardsize,4*boardsize,0);
         MapPoint();
 
         MapPoint(long id, Vector3d position, Vector3d norm);
-
-        mygetobjpoints();
-
-        mygetimgpoints();
-
         // factory function
         static MapPoint::Ptr createMapPoint();
     };

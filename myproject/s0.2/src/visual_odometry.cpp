@@ -46,13 +46,32 @@ namespace myslam {
 
     }
 
+    void VisualOdometry::mygetobjpoints() {
+
+        objpoints.clear();
+        for (int j = 0; j < charucoIds.size(); j++) {
+            objpoints.push_back(
+                    cv::Point3d(board.at<double>(8 * boardnum + j, 0), board.at<double>(8 * boardnum + j, 1),
+                                board.at<double>(8 * boardnum + j, 2)));
+
+
+        }
+
+    }
+
+    void VisualOdometry::mygetimgpoints() {
+        imgpoints.clear();
+        imgpoints = charucoCorners;
+    }
+
     void VisualOdometry::charuco(cv::Mat image) {
         bool valid;
+
         cv::Mat imagecopy;
         image.copyTo(imagecopy);
-
-        cv::Matx33d cameraMatrix = (8.6911353168659366e+02, 0, 2.9267783375673446e+02, 0,
-                8.6721765725812759e+02, 2.9037435251520674e+02, 0, 0, 1);
+        cv::Mat cameraMatrix = (cv::Mat_<double>(3, 3)
+                << 8.6911353168659366e+02, 0., 2.9267783375673446e+02, 0.,
+                8.6721765725812759e+02, 2.9037435251520674e+02, 0., 0., 1.);
         cv::Mat distCoeffs = (cv::Mat_<double>(1, 5) << -1.0666525029122846e-01, 3.3794337314215589e-01,
                 1.6656304800872223e-05, -3.7943927324066247e-03,
                 4.9543475405042214e-01);
@@ -61,7 +80,8 @@ namespace myslam {
         cv::Ptr<cv::aruco::CharucoBoard> board = cv::aruco::CharucoBoard::create(3, 5, 0.055, 0.045, dictionary);
         std::vector<int> ids;
         std::vector<std::vector<cv::Point2f> > corners;
-        cv::aruco::detectMarkers(imagecopy, dictionary, corners, ids);
+        cv::aruco::detectMarkers(image, dictionary, corners, ids);
+
         // if at least one marker detected
         if (ids.size() > 0) {
             std::vector<cv::Point2f> charucoCorners;
@@ -74,99 +94,63 @@ namespace myslam {
 
                     board->ids.push_back(i + 7 * boardnum);
                 }
-                cv::aruco::interpolateCornersCharuco(corners, ids, imagecopy, board, charucoCorners, charucoIds,
+                cv::aruco::interpolateCornersCharuco(corners, ids, image, board, charucoCorners, charucoIds,
                                                      cameraMatrix, distCoeffs);
                 if (charucoIds.size() > 3) {
 
-                    myslam::MapPoint::Ptr mappoint3 = myslam::MapPoint::createMapPoint();
-                    myslam::MapPoint::Ptr mappoint(new myslam::MapPoint);
                     //保存charucoids（boardnum）
-                    mappoint->boardnum=boardnum;
                     //保存objcorne
-                    mappoint-> mygetobjpoints();
                     //保存imgcorner
-                    mappoint->mygetimgpoints();
+                    mysaveboi(boardnum, charucoCorners, charucoIds);
                     //计算pnp更改T_c_w,将tvec和rvec保存
                     Mat rvec, tvec, inliers;
-                    cv::solvePnPRansac(mappoint->objpoints,mappoint->imgpoints, cameraMatrix, distCoeffs, rvec, tvec, false, 100, 4.0, 0.99, inliers);
+                    cv::solvePnPRansac( objpoints, imgpoints, cameraMatrix, Mat(), rvec, tvec, false, 100, 4.0, 0.99, inliers );
                     T_c_r_estimated_ = SE3(
                             SO3(rvec.at<double>(0, 0), rvec.at<double>(1, 0), rvec.at<double>(2, 0)),
                             Vector3d(tvec.at<double>(0, 0), tvec.at<double>(1, 0), tvec.at<double>(2, 0))
                     );
-                    state_ = OK;
-                } else {
-                    state_ = LOST;
+                    SO3 SO3R(rvec.at<double>(0, 0), rvec.at<double>(1, 0), rvec.at<double>(2, 0));
+                    std::cout <<"rvec:"<< rvec << std::endl;
+                    std::cout <<"tcw:"<< SO3R<< std::endl;
+                    state_ = 1;
                 }
             }
+        } else {
+            state_ = 0;
+            //std::cout<<"lost"<<std::endl;
         }
 
     }
 
-    bool VisualOdometry:: addFrame(Frame::Ptr frame) {
+    void
+    VisualOdometry::mysaveboi(int _boardnum, std::vector<cv::Point2f> _charucoCorners, std::vector<int> _charucoIds) {
+        boardnum = _boardnum;
+        charucoCorners = _charucoCorners;
+        charucoIds = _charucoIds;
+        mygetimgpoints();
+        mygetobjpoints();
+
+    }
+
+    bool VisualOdometry::addFrame(Frame::Ptr frame) {
+        // std::cout<<"s:"<<std::endl;
+        // std::cout<<state_<<std::endl;
         switch (state_) {
-            case OK: {
-                curr_ = ref_ = frame;
-                map_->insertKeyFrame(frame);
+            case 1: {
+                //std::cout<<"11"<<std::endl;
+                frame->T_c_w_ = T_c_r_estimated_;
+                // std::cout<<"11"<<std::endl;
                 //保存objcorner
                 //保存imgcorner
                 //计算pnp更改T_c_w,将tvec和rvec保存
                 //保存charucoids（boardnum）
                 //保存camera ids
-
-            }
-            case LOST: {
                 break;
-
             }
             default:
                 break;
 
         }
-        //*****************************
-        switch (state_) {
-            case INITIALIZING: {
-                state_ = OK;
-                curr_ = ref_ = frame;
-                map_->insertKeyFrame(frame);
-                // extract features from first frame
-                extractKeyPoints();
-                computeDescriptors();
-                // compute the 3d position of features in ref frame
-                setRef3DPoints();
-                break;
-            }
-            case OK: {
-                curr_ = frame;
-                extractKeyPoints();
-                computeDescriptors();
-                featureMatching();
-                poseEstimationPnP();
-                if (checkEstimatedPose() == true) // a good estimation
-                {
-                    curr_->T_c_w_ = T_c_r_estimated_ * ref_->T_c_w_;  // T_c_w = T_c_r*T_r_w
-                    ref_ = curr_;
-                    setRef3DPoints();
-                    num_lost_ = 0;
-                    if (checkKeyFrame() == true) // is a key-frame
-                    {
-                        addKeyFrame();
-                    }
-                } else // bad estimation due to various reasons
-                {
-                    num_lost_++;
-                    if (num_lost_ > max_num_lost_) {
-                        state_ = LOST;
-                    }
-                    return false;
-                }
-                break;
-            }
-            case LOST: {
-                cout << "vo has lost." << endl;
-                break;
-            }
-        }
-
         return true;
     }
 

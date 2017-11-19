@@ -186,6 +186,9 @@ test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/include/eigen3/Eigen/src/plugins/C
 test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/local/include/opencv/cxcore.h
+test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/local/include/opencv2/aruco.hpp
+test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/local/include/opencv2/aruco/charuco.hpp
+test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/local/include/opencv2/aruco/dictionary.hpp
 test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/local/include/opencv2/calib3d.hpp
 test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/local/include/opencv2/calib3d/calib3d_c.h
 test/CMakeFiles/run_vo.dir/run_vo.cpp.o: /usr/local/include/opencv2/core.hpp

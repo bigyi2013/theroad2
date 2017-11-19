@@ -4,7 +4,8 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/viz.hpp>
-
+#include <opencv2/opencv.hpp>
+#include <opencv2/aruco/charuco.hpp>
 
 #include "myslam/config.h"
 #include "myslam/visual_odometry.h"
@@ -15,17 +16,12 @@ int main(int argc, char **argv) {
         cout << "usage: run_vo parameter_file" << endl;
         return 1;
     }
-
     myslam::Config::setParameterFile(argv[1]);
     myslam::VisualOdometry::Ptr vo(new myslam::VisualOdometry);
 
     string dataset_dir = myslam::Config::get<string>("dataset_dir");
     cout << "dataset: " << dataset_dir << endl;
-    ifstream fin(dataset_dir + "/associate.txt");
-    if (!fin) {
-        cout << "please generate the associate file called associate.txt!" << endl;
-        return 1;
-    }
+
 
     myslam::Camera::Ptr camera(new myslam::Camera);
 
@@ -45,24 +41,28 @@ int main(int argc, char **argv) {
     cv::VideoCapture inputVideo;
     inputVideo.open(0);
 
-    //   for ( int i=0; i<rgb_files.size(); i++ )
     if (!inputVideo.isOpened()) {
         cout << "video open 不了，我回乱说？" << endl;
         return 1;
     }
+
     //grab(),从视频文件或捕获设备抓取下一个帧。
     while (inputVideo.grab()) {
         cv::Mat image;
+        inputVideo.retrieve(image);
         //寻找二维码,while找到二维码
         myslam::Frame::Ptr pFrame = myslam::Frame::createFrame();
         pFrame->camera_ = camera;
-        pFrame->color_=image;
+        pFrame->color_ = image;
+
         boost::timer timer;
+        vo->state_ = 0;
         vo->charuco(image);
+
         //  vo->addFrame(pFrame); 这一步是关键。
         vo->addFrame(pFrame);
 
-        cout << "VO costs time: " << timer.elapsed() << endl;
+        //  cout << "VO costs time: " << timer.elapsed() << endl;
 //        if (vo->state_ == myslam::VisualOdometry::LOST)
 //            break;
         SE3 Tcw = pFrame->T_c_w_.inverse();

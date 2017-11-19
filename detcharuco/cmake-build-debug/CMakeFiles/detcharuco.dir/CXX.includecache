@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/yehoo/projects/detcharuco/main.cpp
+/home/yehoo/project/detcharuco/main.cpp
 opencv2/opencv.hpp
 -
 opencv2/aruco/charuco.hpp
@@ -28,6 +28,12 @@ opencv2/features2d/features2d.hpp
 opencv2/highgui/highgui.hpp
 -
 opencv2/calib3d/calib3d.hpp
+-
+opencv2/aruco/charuco.hpp
+/home/yehoo/project/detcharuco/opencv2/aruco/charuco.hpp
+opencv2/core.hpp
+-
+opencv2/imgproc.hpp
 -
 
 /usr/local/include/opencv/cxcore.h

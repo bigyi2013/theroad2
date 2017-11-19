@@ -9,7 +9,7 @@ test/CMakeFiles/run_vo.dir/run_vo.cpp.o
  ../include/myslam/map.h
  ../include/myslam/mappoint.h
  ../include/myslam/visual_odometry.h
- /home/yehoo/projects/myproject/s0.2/test/run_vo.cpp
+ /home/yehoo/project/myproject/s0.2/test/run_vo.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Geometry
@@ -187,6 +187,9 @@ test/CMakeFiles/run_vo.dir/run_vo.cpp.o
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  /usr/local/include/opencv/cxcore.h
+ /usr/local/include/opencv2/aruco.hpp
+ /usr/local/include/opencv2/aruco/charuco.hpp
+ /usr/local/include/opencv2/aruco/dictionary.hpp
  /usr/local/include/opencv2/calib3d.hpp
  /usr/local/include/opencv2/calib3d/calib3d_c.h
  /usr/local/include/opencv2/core.hpp

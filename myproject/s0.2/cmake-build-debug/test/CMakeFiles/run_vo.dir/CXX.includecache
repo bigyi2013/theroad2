@@ -66,7 +66,7 @@ myslam/map.h
 opencv2/features2d/features2d.hpp
 -
 
-/home/yehoo/projects/myproject/s0.2/test/run_vo.cpp
+/home/yehoo/project/myproject/s0.2/test/run_vo.cpp
 fstream
 -
 boost/timer.hpp
@@ -77,10 +77,14 @@ opencv2/highgui/highgui.hpp
 -
 opencv2/viz.hpp
 -
+opencv2/opencv.hpp
+-
+opencv2/aruco/charuco.hpp
+-
 myslam/config.h
-/home/yehoo/projects/myproject/s0.2/test/myslam/config.h
+/home/yehoo/project/myproject/s0.2/test/myslam/config.h
 myslam/visual_odometry.h
-/home/yehoo/projects/myproject/s0.2/test/myslam/visual_odometry.h
+/home/yehoo/project/myproject/s0.2/test/myslam/visual_odometry.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core
@@ -933,6 +937,26 @@ details.h
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h
 /usr/local/include/opencv/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/aruco.hpp
+opencv2/core.hpp
+-
+vector
+-
+opencv2/aruco/dictionary.hpp
+/usr/local/include/opencv2/opencv2/aruco/dictionary.hpp
+
+/usr/local/include/opencv2/aruco/charuco.hpp
+opencv2/core.hpp
+-
+vector
+-
+opencv2/aruco.hpp
+-
+
+/usr/local/include/opencv2/aruco/dictionary.hpp
+opencv2/core.hpp
+-
 
 /usr/local/include/opencv2/calib3d.hpp
 opencv2/core.hpp

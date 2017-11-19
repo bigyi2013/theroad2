@@ -39,19 +39,4 @@ namespace myslam {
         );
     }
 
-    MapPoint::mygetobjpoints() {
-
-        objpoints.clear();
-        for (int j = 0; j < charucoIds.size(); j++) {
-            objpoints.push_back(
-                    cv::Point3d(board.at<double>(8 * boardnum + j, 0), board.at<double>(8 * boardnum + j, 0), board.at<double>(8 * boardnum + j, 0)));
-
-
-        }
-
-    }
-    long MapPoint::mygetimgpoints() {
-        imgpoints.clear();
-        imgpoints=charucoCorners;
-    }
 }

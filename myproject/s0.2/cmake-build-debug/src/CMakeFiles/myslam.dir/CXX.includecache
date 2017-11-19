@@ -105,10 +105,6 @@ algorithm
 -
 boost/timer.hpp
 -
-myslam/mappoint.h
-/home/yehoo/project/myproject/s0.2/src/myslam/mappoint.h
-myslam/map.h
-/home/yehoo/project/myproject/s0.2/src/myslam/map.h
 myslam/config.h
 /home/yehoo/project/myproject/s0.2/src/myslam/config.h
 myslam/visual_odometry.h
