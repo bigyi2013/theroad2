@@ -13,12 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14d5e745-230c-43d3-a70a-d86e4566141b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../s0.3/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../s0.3/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../s0.3/.idea/s0.3.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ARUCO/main.cpp" afterPath="$PROJECT_DIR$/../../ARUCO/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../0.2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../0.2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../pnp2/Eigen/src/SparseCore/SparseBlock.h" afterPath="$PROJECT_DIR$/../../pnp2/Eigen/src/SparseCore/SparseBlock.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../pnp2/main.cpp" afterPath="$PROJECT_DIR$/../../pnp2/main.cpp" />
     </list>
@@ -36,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/test/run_vo.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
-              <caret line="51" column="35" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="51" selection-end-column="35" />
+              <caret line="51" column="35" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="51" selection-end-column="35" />
               <folding>
                 <element signature="e#57#75#0" expanded="true" />
               </folding>
@@ -47,7 +42,7 @@
       <file leaf-file-name="visual_odometry.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/visual_odometry.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="1197">
               <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
               <folding>
                 <element signature="e#784#812#0" expanded="true" />
@@ -60,7 +55,7 @@
       <file leaf-file-name="visual_odometry.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/myslam/visual_odometry.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="1292">
               <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
               <folding />
             </state>
@@ -70,7 +65,7 @@
       <file leaf-file-name="se3.h" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/road/Sophus/sophus/se3.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="1140">
               <caret line="60" column="2" lean-forward="false" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
               <folding />
             </state>
@@ -136,7 +131,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -149,35 +144,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="myslam" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="s0.2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myslam" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="s0.2" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myslam" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="s0.2" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="myslam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myslam" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="s0.2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -232,6 +199,7 @@
       <workItem from="1510974969423" duration="4078000" />
       <workItem from="1510985420620" duration="20590000" />
       <workItem from="1511066186493" duration="12729000" />
+      <workItem from="1511138285781" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="重构中">
       <created>1510995328304</created>
@@ -272,7 +240,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55223000" />
+    <option name="totallyTimeSpent" value="55260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,17 +257,17 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34419817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833958" sideWeight="0.4977169" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3320849" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39950064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833958" sideWeight="0.4977169" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -531,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="385" column="52" lean-forward="false" selection-start-line="385" selection-start-column="52" selection-end-line="385" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -546,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="235" column="26" lean-forward="true" selection-start-line="235" selection-start-column="12" selection-end-line="235" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,7 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3144">
           <caret line="213" column="10" lean-forward="false" selection-start-line="213" selection-start-column="10" selection-end-line="213" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="161" column="74" lean-forward="false" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -627,9 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding>
-            <element signature="e#785#819#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="37" column="60" lean-forward="true" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="36" column="35" lean-forward="false" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="640" column="68" lean-forward="false" selection-start-line="640" selection-start-column="64" selection-end-line="640" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="450" column="54" lean-forward="false" selection-start-line="450" selection-start-column="54" selection-end-line="450" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4052">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,13 +648,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/road/Sophus/sophus/se3.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="1140">
           <caret line="60" column="2" lean-forward="false" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
           <folding />
         </state>
@@ -707,7 +661,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/myslam/visual_odometry.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="1292">
           <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
           <folding />
         </state>
@@ -715,7 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/visual_odometry.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="1197">
           <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
           <folding>
             <element signature="e#784#812#0" expanded="true" />
@@ -727,7 +681,7 @@
     <entry file="file://$PROJECT_DIR$/test/run_vo.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
-          <caret line="51" column="35" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="51" selection-end-column="35" />
+          <caret line="51" column="35" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="e#57#75#0" expanded="true" />
           </folding>
