@@ -103,15 +103,14 @@ namespace myslam {
                     //保存imgcorner
                     mysaveboi(boardnum, charucoCorners, charucoIds);
                     //计算pnp更改T_c_w,将tvec和rvec保存
-                    Mat rvec, tvec, inliers;
-                    cv::solvePnPRansac( objpoints, imgpoints, cameraMatrix, Mat(), rvec, tvec, false, 100, 4.0, 0.99, inliers );
+                    Mat rvec, tvec, inliers, d3pts, d2pts;
+                    cv::solvePnPRansac(objpoints, imgpoints, cameraMatrix, Mat(), rvec, tvec, false, 100, 4.0, 0.99, inliers);
+                    Mat pos, rmat;
+                    cv::Rodrigues(rvec, rmat);
                     T_c_r_estimated_ = SE3(
                             SO3(rvec.at<double>(0, 0), rvec.at<double>(1, 0), rvec.at<double>(2, 0)),
                             Vector3d(tvec.at<double>(0, 0), tvec.at<double>(1, 0), tvec.at<double>(2, 0))
                     );
-                    SO3 SO3R(rvec.at<double>(0, 0), rvec.at<double>(1, 0), rvec.at<double>(2, 0));
-                    std::cout <<"rvec:"<< rvec << std::endl;
-                    std::cout <<"tcw:"<< SO3R<< std::endl;
                     state_ = 1;
                 }
             }

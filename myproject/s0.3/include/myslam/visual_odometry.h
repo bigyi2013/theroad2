@@ -31,13 +31,9 @@ class VisualOdometry
 {
 public:
     typedef shared_ptr<VisualOdometry> Ptr;
-    enum VOState {
-        INITIALIZING=-1,
-        OK=0,
-        LOST
-    };
-    
-    VOState     state_;     // current VO status
+
+    int   charuco_;
+   int    state_;     // current VO status
     Map::Ptr    map_;       // map with all frames and map points
     Frame::Ptr  ref_;       // reference frame 
     Frame::Ptr  curr_;      // current frame 
@@ -63,13 +59,36 @@ public:
     
     double key_frame_min_rot;   // minimal rotation of two key-frames
     double key_frame_min_trans; // minimal translation of two key-frames
+
+    int boardnum_;
+    vector<cv::Point3f> objpoints;
+    vector<cv::Point2f> imgpoints;
+    std::vector<int> charucoIds_;
+    std::vector<cv::Point2f> charucoCorners;
+    double boardsize = 0.055;
+    cv::Mat cameraMatrix_;
+    cv::Mat distCoeffs_;
+    cv::Mat board = (cv::Mat_<double>(24, 3) << boardsize, boardsize, 0, 2 * boardsize, boardsize, 0, boardsize, 2 *
+                                                                                                                 boardsize, 0,
+            2 * boardsize, 2 * boardsize, 0, boardsize, 3 * boardsize, 0, 2 * boardsize, 3 *
+                                                                                         boardsize, 0, boardsize,
+            4 * boardsize, 0, 2 * boardsize, 4 * boardsize, 0,
+            boardsize, boardsize, 0, 2 * boardsize, boardsize, 0, boardsize, 2 * boardsize, 0, 2 * boardsize, 2 *
+                                                                                                              boardsize, 0, boardsize,
+            3 * boardsize, 0, 2 * boardsize, 3 * boardsize, 0, boardsize, 4 * boardsize, 0, 2 * boardsize, 4 *
+                                                                                                           boardsize, 0,
+            boardsize, boardsize, 0, 2 * boardsize, boardsize, 0, boardsize, 2 * boardsize, 0, 2 * boardsize, 2 *
+                                                                                                              boardsize, 0, boardsize,
+            3 * boardsize, 0, 2 * boardsize, 3 * boardsize, 0, boardsize, 4 * boardsize, 0, 2 * boardsize, 4 *
+                                                                                                           boardsize, 0);
     
 public: // functions 
     VisualOdometry();
     ~VisualOdometry();
-    
+    bool myaddframe(Frame::Ptr frame);
     bool addFrame( Frame::Ptr frame );      // add a new frame 
-    bool findcharuco( Frame::Ptr frame );      // 判断是否有二维码
+    bool findcharuco( Frame::Ptr frame );
+    void mysaveboi();// 判断是否有二维码
 protected:  
     // inner operation 
     void extractKeyPoints();

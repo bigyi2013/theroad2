@@ -43,6 +43,7 @@ public:
     {
         return T( Config::config_->file_[key] );
     }
+
 };
 }
 

@@ -5,7 +5,7 @@ src/CMakeFiles/myslam.dir/camera.cpp.o
  ../include/myslam/camera.h
  ../include/myslam/common_include.h
  ../include/myslam/config.h
- /home/yehoo/projects/myproject/0.3/src/camera.cpp
+ /home/yehoo/project/myproject/0.3/src/camera.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Geometry
@@ -318,7 +318,7 @@ src/CMakeFiles/myslam.dir/camera.cpp.o
 src/CMakeFiles/myslam.dir/config.cpp.o
  ../include/myslam/common_include.h
  ../include/myslam/config.h
- /home/yehoo/projects/myproject/0.3/src/config.cpp
+ /home/yehoo/project/myproject/0.3/src/config.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Geometry
@@ -632,7 +632,7 @@ src/CMakeFiles/myslam.dir/frame.cpp.o
  ../include/myslam/camera.h
  ../include/myslam/common_include.h
  ../include/myslam/frame.h
- /home/yehoo/projects/myproject/0.3/src/frame.cpp
+ /home/yehoo/project/myproject/0.3/src/frame.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Geometry
@@ -946,7 +946,7 @@ src/CMakeFiles/myslam.dir/g2o_types.cpp.o
  ../include/myslam/camera.h
  ../include/myslam/common_include.h
  ../include/myslam/g2o_types.h
- /home/yehoo/projects/myproject/0.3/src/g2o_types.cpp
+ /home/yehoo/project/myproject/0.3/src/g2o_types.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
@@ -1335,7 +1335,7 @@ src/CMakeFiles/myslam.dir/map.cpp.o
  ../include/myslam/frame.h
  ../include/myslam/map.h
  ../include/myslam/mappoint.h
- /home/yehoo/projects/myproject/0.3/src/map.cpp
+ /home/yehoo/project/myproject/0.3/src/map.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Geometry
@@ -1648,7 +1648,7 @@ src/CMakeFiles/myslam.dir/map.cpp.o
 src/CMakeFiles/myslam.dir/mappoint.cpp.o
  ../include/myslam/common_include.h
  ../include/myslam/mappoint.h
- /home/yehoo/projects/myproject/0.3/src/mappoint.cpp
+ /home/yehoo/project/myproject/0.3/src/mappoint.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Geometry
@@ -1967,7 +1967,7 @@ src/CMakeFiles/myslam.dir/visual_odometry.cpp.o
  ../include/myslam/map.h
  ../include/myslam/mappoint.h
  ../include/myslam/visual_odometry.h
- /home/yehoo/projects/myproject/0.3/src/visual_odometry.cpp
+ /home/yehoo/project/myproject/0.3/src/visual_odometry.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense

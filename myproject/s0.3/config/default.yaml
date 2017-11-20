@@ -1,7 +1,7 @@
 %YAML:1.0
 # data
 # the tum dataset directory, change it to yours! 
-dataset_dir: /home/yehoo/dataset/rgbd_dataset_freiburg1_xyz
+dataset_dir: /home/yehoo/dataset/rgbd_dataset_freiburg1_desk
 
 # camera intrinsics
 # fr1
@@ -21,24 +21,3 @@ max_num_lost: 10
 min_inliers: 10
 keyframe_rotation: 0.1
 keyframe_translation: 0.1
-#board
-size: 0.055
-b1_t1: 
-b1_r1: 
-b1_t2: 
-b1_r2: 
-b1_t3: 
-b1_r3: 
-b2_t1: 
-b2_r1: 
-b2_t2: 
-b2_r2: 
-b2_t3: 
-b2_r3: 
-b3_t1: 
-b3_r1: 
-b3_t2: 
-b3_r2: 
-b3_t3: 
-b3_r3: 
-

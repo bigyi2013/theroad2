@@ -65,8 +65,8 @@ public:
     double key_frame_min_trans; // minimal translation of two key-frames
     //************
     //**********
-    Mat _rvec;
-    Mat _tvec;
+    Mat rvec_;
+    Mat tvec_;
     int boardnum;
     vector<cv::Point3f> objpoints;
     vector<cv::Point2f> imgpoints;

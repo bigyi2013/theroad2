@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -march=native -O3 -O3 -DNDEBUG
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include -isystem /usr/local/include/opencv -I/usr/local/lib/cmake/Sophus/../../../include -I/home/yehoo/projects/myproject/0.3/include 
+CXX_INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include -isystem /usr/local/include/opencv -I/home/yehoo/road/Sophus -I/home/yehoo/project/myproject/0.3/include 
 
