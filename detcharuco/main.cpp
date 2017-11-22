@@ -75,6 +75,7 @@ cv::Mat getrt(cv::Vec3d tvec, cv::Vec3d rvec, int boardnum) {
     cv::Rodrigues(rvec2, R2);
     T2 = DoubleMatFromVec3b(tvec2);
     pos = R2 * pos + T2;
+    std::cout<<pos.at<double>(0, 0) <<std::endl;
     return pos;
 }
 
@@ -127,8 +128,8 @@ int main() {
                     cv::aruco::drawDetectedCornersCharuco(imageCopy, charucoCorners, charucoIds, cv::Scalar(255, 0, 0));
                     cv::Vec3d rvec, tvec;
                     //charucoCorners 就是imgcorner;角点在图像上的坐标.
-                    bool valid = cv::aruco::estimatePoseCharucoBoard(charucoCorners, charucoIds, board, cameraMatrix,
-                                                                     std::cout << "rvec:" << rvec << std::endl;
+                    bool valid = cv::aruco::estimatePoseCharucoBoard(charucoCorners, charucoIds, board, cameraMatrix, distCoeffs,rvec,tvec,false);
+                                                                //     std::cout << "rvec:" << rvec << std::endl;
                     // if charuco pose is valid
                     if (valid) {
                         cv::aruco::drawAxis(imageCopy, cameraMatrix, distCoeffs, rvec, tvec, 0.1);

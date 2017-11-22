@@ -93,14 +93,13 @@ namespace myslam {
                     //保存charucoids（boardnum）
                     //保存objcorne
                     //保存imgcorner
-                    cameraMatrix_=cameraMatrix;
-                    distCoeffs_=distCoeffs;
+                    cameraMatrix_ = cameraMatrix;
+                    distCoeffs_ = distCoeffs;
                     boardnum_ = boardnum;
                     imgpoints = charucoCorners;
                     charucoIds_ = charucoIds;
                     mysaveboi();
                     charuco_ = 1;
-
                     break;
                 } else {
                     charuco_ = 0;
@@ -118,15 +117,17 @@ namespace myslam {
                     case 0: {
                         //设置为关键帧
                         curr_ = ref_ = frame;
-                       // map_->insertKeyFrame(frame);
+                        // map_->insertKeyFrame(frame);
                         Mat rvec, tvec, inliers;
-                       // std::cout<<"1111"<<std::endl;
-                        cv::solvePnPRansac(objpoints, imgpoints, cameraMatrix_, distCoeffs_, rvec, tvec, false, 100, 4.0, 0.99, inliers);
+                        // std::cout<<"1111"<<std::endl;
+                        cv::solvePnPRansac(objpoints, imgpoints, cameraMatrix_, distCoeffs_, rvec, tvec, false, 100,
+                                           4.0, 0.99, inliers);
                         Mat pos, rmat;
-                        cv::Rodrigues(rvec,rmat);
-                        frame->rvec_=rvec;
-                       //std::cout<<"curr:"<<curr_->rvec_<<std::endl;
-                       std::cout<<"frame:"<<frame->rvec_<<std::endl;
+                        cv::Rodrigues(rvec, rmat);
+                        frame->rvec_ =rvec;
+                        frame->tvec_=tvec;
+                        //std::cout<<"curr:"<<curr_->rvec_<<std::endl;
+                        //std::cout << "frame:" << frame->rvec_ << std::endl;
                         frame->T_c_w_ = SE3(
                                 SO3(rvec.at<double>(0, 0), rvec.at<double>(1, 0), rvec.at<double>(2, 0)),
                                 Vector3d(tvec.at<double>(0, 0), tvec.at<double>(1, 0), tvec.at<double>(2, 0))
@@ -134,8 +135,7 @@ namespace myslam {
                         break;
                     }
                     case 1: {
-                        std::cout<<"1111"<<std::endl;
-
+                        std::cout << "1111" << std::endl;
                         break;
                     }
                 }
@@ -150,8 +150,11 @@ namespace myslam {
                     case 1: {
 
                     }
+                        num_lost_++;
+                        if (num_lost_>max_num_lost_){
+                            state_=0;
+                        }
                 }
-                num_lost_++;
             }
         }
     }

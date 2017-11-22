@@ -42,17 +42,9 @@ int main(){
 			for (int i = 0; i < ids.size(); i++){
 				cv::aruco::drawAxis(imageCopy, cameraMatrix, distCoeffs, rvecs[i], tvecs[i], 0.1);
 				cv::Rodrigues(rvecs[i], R);
-				//cout << "旋转矩阵=" << R << endl;
 				R_1 = R.inv();
-				//cout << "旋转矩阵的逆=" << R_1 << endl;
-				//cout << "平移向量=" << tvecs[i] << endl;
 				R = DoubleMatFromVec3b(tvecs[i]);
-				//cout << "平移向量转换后=" << R << endl;
 				pos = R_1*(-R);
-				//cout << "相机位置：\n" << "X轴：" << pos.at<double>(0, 0) << endl;
-				//cout << pos.at<double>(0, 0) << endl;
-				//cout << "Y轴：" << pos.at<double>(1, 0) << endl;
-				//cout << "Z轴：" << pos.at<double>(2, 0) << endl << endl;
 			}	
 		}
 

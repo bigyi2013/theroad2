@@ -4,7 +4,11 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/viz.hpp>
-
+#include <opencv2/aruco.hpp>
+#include <opencv2/aruco/charuco.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/calib3d/calib3d.hpp>
 #include "myslam/config.h"
 #include "myslam/visual_odometry.h"
 
@@ -41,15 +45,10 @@ int main(int argc, char **argv) {
         myslam::Frame::Ptr pFrame = myslam::Frame::createFrame();
         pFrame->camera_ = camera;
         pFrame->color_ = image;
-      //  boost::timer timer;
-
         vo->findcharuco(pFrame);
-       // cout<<"findcharuco: "<<timer.elapsed()<<endl;
-       // boost::timer timer2;
-        vo->myaddframe(pFrame);
-       // cout<<"vo_cost: "<<timer2.elapsed()<<endl;
-        //SE3 Tcw = pFrame->T_c_w_.inverse();
 
+        vo->myaddframe(pFrame);
+        //SE3 Tcw = pFrame->T_c_w_.inverse();
         // show the map and the camera pose 
 //        cv::Affine3d M(
 //                cv::Affine3d::Mat3(
@@ -61,11 +60,15 @@ int main(int argc, char **argv) {
 //                        Tcw.translation()(0, 0), Tcw.translation()(1, 0), Tcw.translation()(2, 0)
 //                )
 //        );
-
+        cv::Mat rmat,pos;
+        std::cout<<pFrame->tvec_<<std::endl;
+        cv::Rodrigues(pFrame->rvec_,rmat);
+        pos=-rmat.inv()*pFrame->tvec_;
+        cv::Affine3d pose(rmat.inv(), pos);
         cv::imshow("image", image);
         cv::waitKey(1);
-        //vis.setWidgetPose("Camera", M);
-       // vis.spinOnce(1, false);
+        vis.setWidgetPose("Camera", pose);
+       vis.spinOnce(1, false);
     }
 
     return 0;
