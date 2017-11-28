@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(detcharuco)
 
-add_executable(detcharuco main.cpp )
+add_executable(detcharuco main.cpp)
 
 install(TARGETS detcharuco RUNTIME DESTINATION bin)
 find_package( OpenCV REQUIRED )

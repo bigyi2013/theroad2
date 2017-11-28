@@ -39,6 +39,7 @@ public:
     Mat                            color_, depth_; // color and depth image
     Mat                             rvec_;
     Mat tvec_;
+
 public: // data members
     Frame();
     Frame( long id, double time_stamp=0, SE3 T_c_w=SE3(), Camera::Ptr camera=nullptr, Mat color=Mat(), Mat depth=Mat() );
@@ -55,6 +56,7 @@ public: // data members
 
     // check if a point is in this frame
     bool isInFrame( const Vector3d& pt_world );
+
 };
 
 }

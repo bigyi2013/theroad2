@@ -74,12 +74,40 @@ cv::Mat getrt(cv::Vec3d tvec, cv::Vec3d rvec, int boardnum) {
     cv::Mat R2;
     cv::Rodrigues(rvec2, R2);
     T2 = DoubleMatFromVec3b(tvec2);
+
     pos = R2 * pos + T2;
-    std::cout<<pos.at<double>(0, 0) <<std::endl;
     return pos;
 }
 
+void mykalman2chushihua(KalmanFilter KF, double x, double dx) {
+
+    randn(KF.statePost, Scalar::all(0), Scalar::all(0.1));
+    KF.statePost = (Mat_<double>(2, 1) << x, dx);
+}
+
 int main() {
+    cv::Mat colorImage(800, 800, CV_8UC3);
+    //**********************
+    KalmanFilter KF(6, 3, 0);
+    Mat state(6, 1, CV_32F); /* (phi, delta_phi) */
+    Mat processNoise(6, 1, CV_32F);
+    Mat measurement = Mat::zeros(3, 1, CV_32F);
+   // randn(state, Scalar::all(0), Scalar::all(0.1));//随机生成一个矩阵，期望是0，标准差为0.1;
+    KF.transitionMatrix = (Mat_<float>(6, 6) << 1, 0, 0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1);//元素导入矩阵，按行;
+    //!< measurement matrix (H) 观测模型
+    setIdentity(KF.measurementMatrix);
+    //!< process noise covariance matrix (Q)
+    // wk 是过程噪声，并假定其符合均值为零，协方差矩阵为Qk(Q)的多元正态分布;
+    setIdentity(KF.processNoiseCov, Scalar::all(0.00001));
+    //!< measurement noise covariance matrix (R)
+    //vk 是观测噪声，其均值为零，协方差矩阵为Rk,且服从正态分布;
+    setIdentity(KF.measurementNoiseCov, Scalar::all(0.3));
+    //!< priori error estimate covariance matrix (P'(k)): P'(k)=A*P(k-1)*At + Q)*/  A代表F: transitionMatrix
+    //预测估计协方差矩阵;
+    setIdentity(KF.errorCovPost, Scalar::all(1));
+    //!< corrected state (x(k)): x(k)=x'(k)+K(k)*(z(k)-H*x'(k))
+    randn(KF.statePost, Scalar::all(0), Scalar::all(0.1));
+    //***************************
     int num = 0;
     cv::VideoCapture inputVideo;
     inputVideo.open(0);
@@ -128,27 +156,54 @@ int main() {
                     cv::aruco::drawDetectedCornersCharuco(imageCopy, charucoCorners, charucoIds, cv::Scalar(255, 0, 0));
                     cv::Vec3d rvec, tvec;
                     //charucoCorners 就是imgcorner;角点在图像上的坐标.
-                    bool valid = cv::aruco::estimatePoseCharucoBoard(charucoCorners, charucoIds, board, cameraMatrix, distCoeffs,rvec,tvec,false);
-                                                                //     std::cout << "rvec:" << rvec << std::endl;
+                    bool valid = cv::aruco::estimatePoseCharucoBoard(charucoCorners, charucoIds, board, cameraMatrix,
+                                                                     distCoeffs, rvec, tvec, false);
+                    //     std::cout << "rvec:" << rvec << std::endl;
                     // if charuco pose is valid
                     if (valid) {
                         cv::aruco::drawAxis(imageCopy, cameraMatrix, distCoeffs, rvec, tvec, 0.1);
                         //判断ids(boardnum),r*pos+t
                         cv::Vec3d pos;
                         pos = getrt(tvec, rvec, boardnum);
-                        cv::Mat rmat;
-                        Rodrigues(rvec, rmat);
-                        Affine3d pose(rmat.inv(), pos);// Affine3f pose(r,t)
-                        window.setWidgetPose("plane", pose);
-                        plane.setPose(pose);
-                        window.spinOnce(1, true);
+                        Mat prediction = KF.predict();
+                        float x,y,z;
+                        x=prediction.at<float>(0,0);
+                        y=prediction.at<float>(1,0);
+                        z=prediction.at<float>(2,0);
+                        measurement.at<float>(0,0)=(float)pos[0];
+                        measurement.at<float>(1,0)=(float)pos[1];
+                        measurement.at<float>(2,0)=(float)pos[2];
+                        KF.correct(measurement);
+                        //***************************************
+                       // pos2 = pos;
+                        //对rvec2和tvec进行”卡而慢“滤波。
+                        //或者多pos进行卡而慢
+                        // cv::Mat rmat;
+                        // std::cout<<rvec<<std::endl;
+                        //  Rodrigues(rvec, rmat);
+                        //  Affine3d pose(rmat.inv(), pos);// Affine3f pose(r,t)
+                        //  window.setWidgetPose("plane", pose);
+                        //  plane.setPose(pose);
+                        //  window.spinOnce(1, true);
+                       // std::cout<<"x:" <<x <<"******x2:"<<pos[0]<< std::endl;
+                       // std::cout<<"y:" <<y<<"******x2:"<<pos[1]<< std::endl;
+                        cv::Point m_position;
+                        m_position.x=(int)((-x+1)*300);
+                        m_position.y=(int)((y+1)*300);
+                        std::cout<<"y:" <<y<<"******x2:"<<pos[1]<< std::endl;
+                        cv::circle(colorImage,m_position, 0, CV_RGB(0, 255, 0), 3);
+                        //std::cout<<"z:" <<z <<"******x2:"<<pos[2]<< std::endl;
                     }
                 }
             }
         }
         cv::imshow("out", imageCopy);
+        cv::imshow("point", colorImage);
         char key = (char) cv::waitKey(1);
         if (key == 27)
             break;
     }
 }
+
+
+

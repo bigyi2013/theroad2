@@ -67,7 +67,8 @@ namespace myslam {
         cv::Mat distCoeffs = (cv::Mat_<double>(1, 5) << -1.0666525029122846e-01, 3.3794337314215589e-01,
                 1.6656304800872223e-05, -3.7943927324066247e-03,
                 4.9543475405042214e-01);
-
+        cameraMatrix_ = cameraMatrix;
+        distCoeffs_ = distCoeffs;
         cv::Ptr<cv::aruco::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250);
         cv::Ptr<cv::aruco::CharucoBoard> board = cv::aruco::CharucoBoard::create(3, 5, 0.055, 0.045, dictionary);
         std::vector<int> ids;
@@ -93,8 +94,6 @@ namespace myslam {
                     //保存charucoids（boardnum）
                     //保存objcorne
                     //保存imgcorner
-                    cameraMatrix_ = cameraMatrix;
-                    distCoeffs_ = distCoeffs;
                     boardnum_ = boardnum;
                     imgpoints = charucoCorners;
                     charucoIds_ = charucoIds;
@@ -105,60 +104,74 @@ namespace myslam {
                     charuco_ = 0;
                 }
             }
+
+        }
+        else {
+            charuco_ = 0;
         }
     }
 
     bool VisualOdometry::myaddframe(Frame::Ptr frame) {
-        //std::cout<<charuco_<<std::endl;
+
         switch (charuco_) {
             case 1: {
 
                 switch (state_) {
                     case 0: {
                         //设置为关键帧
-                        curr_ = ref_ = frame;
-                        // map_->insertKeyFrame(frame);
+                        //curr_ = ref_ = frame;
+                        map_->insertKeyFrame(frame);
                         Mat rvec, tvec, inliers;
-                        // std::cout<<"1111"<<std::endl;
-                        cv::solvePnPRansac(objpoints, imgpoints, cameraMatrix_, distCoeffs_, rvec, tvec, false, 100,
+                        cv::solvePnPRansac(objpoints, imgpoints, cameraMatrix_, distCoeffs_,  rvec, tvec, false, 100,
                                            4.0, 0.99, inliers);
-                        Mat pos, rmat;
-                        cv::Rodrigues(rvec, rmat);
-                        frame->rvec_ =rvec;
+                        frame->rvec_=rvec;
                         frame->tvec_=tvec;
-                        //std::cout<<"curr:"<<curr_->rvec_<<std::endl;
-                        //std::cout << "frame:" << frame->rvec_ << std::endl;
-                        frame->T_c_w_ = SE3(
-                                SO3(rvec.at<double>(0, 0), rvec.at<double>(1, 0), rvec.at<double>(2, 0)),
-                                Vector3d(tvec.at<double>(0, 0), tvec.at<double>(1, 0), tvec.at<double>(2, 0))
-                        );
+                        pushrt(rvec,tvec);
+                        state_=1;
                         break;
                     }
                     case 1: {
-                        std::cout << "1111" << std::endl;
+                        Mat rvec, tvec, inliers;
+                        cv::solvePnP(objpoints, imgpoints, cameraMatrix_, distCoeffs_,  rvec, tvec, false);
+                        frame->rvec_=rvec;
+                        frame->tvec_=tvec;
+                        pushrt(rvec,tvec);
+                        cv::Mat rvec2,tvec2;
+                        cv::composeRT(rveclist_[listnum-1],tveclist_[listnum-1],rveclist_[listnum],tveclist_[listnum],rvec2,tvec2);
+                        frame->T_c_w_ = SE3(
+                               SO3(rvec2.at<double>(0, 0), rvec2.at<double>(1, 0), rvec2.at<double>(2, 0)),
+                               Vector3d(tvec2.at<double>(0, 0), tvec2.at<double>(1, 0), tvec2.at<double>(2, 0))
+                     );
+                        std::cout<<tvec2<<std::endl;
                         break;
                     }
                 }
                 //state_ = OK;
                 num_lost_ = 0;
             }
-            case 0: {
-                switch (state_) {
-                    case 0: {
-
-                    }
-                    case 1: {
-
-                    }
-                        num_lost_++;
-                        if (num_lost_>max_num_lost_){
-                            state_=0;
-                        }
-                }
-            }
+//            case 0: {
+//                switch (state_) {
+//                    case 0: {
+//
+//                    }
+//                    case 1: {
+//
+//                    }
+//                        num_lost_++;
+//                        if (num_lost_>max_num_lost_){
+//
+//                        }
+//                }
+//            }
         }
     }
-
+    bool VisualOdometry::pushrt(Mat rvec,Mat tvec ){
+        //这个地方需要clear,
+        rveclist_.push_back(rvec);
+        tveclist_.push_back(tvec);
+        listnum++;
+      //std::cout<<"size:"<<rveclist_[listnum]<<std::endl;
+    }
 //    bool VisualOdometry::addFrame(Frame::Ptr frame) {
 //        switch (state_) {
 //            case INITIALIZING: {

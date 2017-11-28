@@ -13,7 +13,6 @@
 #include "myslam/visual_odometry.h"
 
 int main(int argc, char **argv) {
-
    myslam::Config::setParameterFile(argv[1]);
 
     myslam::VisualOdometry::Ptr vo(new myslam::VisualOdometry);
@@ -46,29 +45,27 @@ int main(int argc, char **argv) {
         pFrame->camera_ = camera;
         pFrame->color_ = image;
         vo->findcharuco(pFrame);
-
         vo->myaddframe(pFrame);
-        //SE3 Tcw = pFrame->T_c_w_.inverse();
-        // show the map and the camera pose 
-//        cv::Affine3d M(
-//                cv::Affine3d::Mat3(
-//                        Tcw.rotation_matrix()(0, 0), Tcw.rotation_matrix()(0, 1), Tcw.rotation_matrix()(0, 2),
-//                        Tcw.rotation_matrix()(1, 0), Tcw.rotation_matrix()(1, 1), Tcw.rotation_matrix()(1, 2),
-//                        Tcw.rotation_matrix()(2, 0), Tcw.rotation_matrix()(2, 1), Tcw.rotation_matrix()(2, 2)
-//                ),
-//                cv::Affine3d::Vec3(
-//                        Tcw.translation()(0, 0), Tcw.translation()(1, 0), Tcw.translation()(2, 0)
-//                )
-//        );
-        cv::Mat rmat,pos;
-        std::cout<<pFrame->tvec_<<std::endl;
-        cv::Rodrigues(pFrame->rvec_,rmat);
-        pos=-rmat.inv()*pFrame->tvec_;
-        cv::Affine3d pose(rmat.inv(), pos);
+        SE3 Tcw = pFrame->T_c_w_.inverse();
+
+         //show the map and the camera pose
+        cv::Affine3d M(
+                cv::Affine3d::Mat3(
+                        Tcw.rotation_matrix()(0, 0), Tcw.rotation_matrix()(0, 1), Tcw.rotation_matrix()(0, 2),
+                        Tcw.rotation_matrix()(1, 0), Tcw.rotation_matrix()(1, 1), Tcw.rotation_matrix()(1, 2),
+                        Tcw.rotation_matrix()(2, 0), Tcw.rotation_matrix()(2, 1), Tcw.rotation_matrix()(2, 2)
+                ),
+                cv::Affine3d::Vec3(
+                        Tcw.translation()(0, 0), Tcw.translation()(1, 0), Tcw.translation()(2, 0)
+                )
+        );
+
         cv::imshow("image", image);
         cv::waitKey(1);
-        vis.setWidgetPose("Camera", pose);
-       vis.spinOnce(1, false);
+        vis.setWidgetPose("Camera", M);
+        vis.spinOnce(1, false);
+
+
     }
 
     return 0;

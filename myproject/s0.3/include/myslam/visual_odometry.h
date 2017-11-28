@@ -60,6 +60,11 @@ public:
     double key_frame_min_rot;   // minimal rotation of two key-frames
     double key_frame_min_trans; // minimal translation of two key-frames
 
+
+
+    vector<Mat>                       tveclist_;
+    vector<Mat>                       rveclist_;
+    int listnum=-1;
     int boardnum_;
     vector<cv::Point3f> objpoints;
     vector<cv::Point2f> imgpoints;
@@ -86,6 +91,7 @@ public: // functions
     VisualOdometry();
     ~VisualOdometry();
     bool myaddframe(Frame::Ptr frame);
+    bool pushrt(Mat rvec,Mat tvec );
     bool addFrame( Frame::Ptr frame );      // add a new frame 
     bool findcharuco( Frame::Ptr frame );
     void mysaveboi();// 判断是否有二维码
