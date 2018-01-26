@@ -1,0 +1,35 @@
+# CMake generation dependency list for this directory.
+C:/theroad/arcuo/aruco-2.0.19/CMakeLists.txt
+C:/theroad/arcuo/build/CMakeFiles/3.9.3/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeSystemSpecificInitialize.cmake
+C:/theroad/arcuo/build/CMakeFiles/3.9.3/CMakeCCompiler.cmake
+C:/theroad/arcuo/build/CMakeFiles/3.9.3/CMakeCXXCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC.cmake
+C:/theroad/arcuo/build/CMakeFiles/3.9.3/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake
+C:/opencv/build/x64/vc14/lib/OpenCVConfig-version.cmake
+C:/opencv/build/x64/vc14/lib/OpenCVConfig.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+C:/opencv/build/x64/vc14/lib/OpenCVModules.cmake
+C:/opencv/build/x64/vc14/lib/OpenCVModules-debug.cmake
+C:/opencv/build/x64/vc14/lib/OpenCVModules-release.cmake
+C:/theroad/arcuo/aruco-2.0.19/cmake_uninstall.cmake.in
+C:/theroad/arcuo/aruco-2.0.19/config.cmake.in
+C:/theroad/arcuo/aruco-2.0.19/aruco.pc.in
+C:/theroad/arcuo/aruco-2.0.19/aruco-uninstalled.pc.in

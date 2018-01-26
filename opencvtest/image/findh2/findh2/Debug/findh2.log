@@ -1,0 +1,7 @@
+﻿  findh2.cpp
+c:\theroad\opencv\image\findh2\findh2\findh2.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\theroad\opencv\image\findh2\findh2\findh2.cpp(15): warning C4129: “o”: 不可识别的字符转义序列
+c:\theroad\opencv\image\findh2\findh2\findh2.cpp(15): warning C4129: “i”: 不可识别的字符转义序列
+c:\theroad\opencv\image\findh2\findh2\findh2.cpp(15): warning C4129: “*”: 不可识别的字符转义序列
+  findh2.vcxproj -> C:\theroad\opencv\image\findh2\Debug\findh2.exe
+  findh2.vcxproj -> C:\theroad\opencv\image\findh2\Debug\findh2.pdb (Partial PDB)

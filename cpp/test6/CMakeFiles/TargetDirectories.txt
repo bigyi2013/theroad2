@@ -1,0 +1,3 @@
+/media/yehoo/E2342DB0342D891D/theroad/cpp/test6/CMakeFiles/edit_cache.dir
+/media/yehoo/E2342DB0342D891D/theroad/cpp/test6/CMakeFiles/rebuild_cache.dir
+/media/yehoo/E2342DB0342D891D/theroad/cpp/test6/CMakeFiles/display.dir
