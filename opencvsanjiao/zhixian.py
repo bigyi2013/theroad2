@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import random
 name="sanjiao.png"
-for i in range(1,500):
+for i in range(1,2000):
     # Create a black image
     img = np.zeros((512,512,3), np.uint8)
     # Draw a diagonal blue line with thickness of 5 px
