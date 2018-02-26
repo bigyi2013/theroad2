@@ -1,0 +1,19 @@
+﻿生成启动时间为 2018/2/6 18:52:41。
+     1>项目“C:\theroad2\mobanpipei\findobj\surfandakaze\surfgai\surfgai.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (surfgai.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\Daheng Imavision\MER-Series\Samples\C++ SDK\inc" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\surfakaze.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt surfakaze.cpp
+         surfakaze.cpp
+     1>c:\opencv3.1.0\install\include\opencv2\core\mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\opencv3.1.0\install\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\opencv3.1.0\install\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\theroad2\mobanpipei\findobj\surfandakaze\surfgai\surfakaze.cpp(117): error C2065: “homography2”: 未声明的标识符
+     1>c:\theroad2\mobanpipei\findobj\surfandakaze\surfgai\surfakaze.cpp(119): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>c:\theroad2\mobanpipei\findobj\surfandakaze\surfgai\surfakaze.cpp(120): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>c:\theroad2\mobanpipei\findobj\surfandakaze\surfgai\surfakaze.cpp(121): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>c:\theroad2\mobanpipei\findobj\surfandakaze\surfgai\surfakaze.cpp(122): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>已完成生成项目“C:\theroad2\mobanpipei\findobj\surfandakaze\surfgai\surfgai.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.04

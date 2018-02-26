@@ -1,0 +1,22 @@
+﻿生成启动时间为 2018/2/6 15:49:48。
+     1>项目“C:\theroad2\mobanpipei\findobj\findobj\findobj\findobj.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\Daheng Imavision\MER-Series\Samples\C++ SDK\inc" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\findobj.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt surf.cpp
+         surf.cpp
+     1>c:\opencv3.1.0\install\include\opencv2\core\mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\opencv3.1.0\install\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\opencv3.1.0\install\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\theroad2\mobanpipei\findobj\findobj\findobj\surf.cpp(84): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>c:\theroad2\mobanpipei\findobj\findobj\findobj\surf.cpp(85): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>c:\theroad2\mobanpipei\findobj\findobj\findobj\surf.cpp(86): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>c:\theroad2\mobanpipei\findobj\findobj\findobj\surf.cpp(87): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\theroad2\mobanpipei\findobj\findobj\Debug\findobj.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\Daheng Imavision\MER-Series\Samples\C++ SDK\lib\x86" GxIAPICPP.lib opencv_aruco310d.lib opencv_bgsegm310d.lib opencv_bioinspired310d.lib opencv_calib3d310d.lib opencv_ccalib310d.lib opencv_core310d.lib opencv_datasets310d.lib opencv_dnn310d.lib opencv_features2d310d.lib opencv_dpm310d.lib opencv_face310d.lib opencv_flann310d.lib opencv_fuzzy310d.lib opencv_highgui310d.lib opencv_imgcodecs310d.lib opencv_imgproc310d.lib opencv_line_descriptor310d.lib opencv_ml310d.lib opencv_objdetect310d.lib opencv_optflow310d.lib opencv_photo310d.lib opencv_plot310d.lib opencv_reg310d.lib opencv_rgbd310d.lib opencv_saliency310d.lib opencv_shape310d.lib opencv_stereo310d.lib opencv_stitching310d.lib opencv_structured_light310d.lib opencv_superres310d.lib opencv_surface_matching310d.lib opencv_text310d.lib opencv_tracking310d.lib opencv_ts310d.lib opencv_video310d.lib opencv_videoio310d.lib opencv_videostab310d.lib opencv_xfeatures2d310d.lib opencv_ximgproc310d.lib opencv_xobjdetect310d.lib opencv_xphoto310d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\theroad2\mobanpipei\findobj\findobj\Debug\findobj.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\theroad2\mobanpipei\findobj\findobj\Debug\findobj.lib" /MACHINE:X86 Debug\findobj.obj
+         Debug\stdafx.obj
+         Debug\surf.obj
+         findobj.vcxproj -> C:\theroad2\mobanpipei\findobj\findobj\Debug\findobj.exe
+     1>已完成生成项目“C:\theroad2\mobanpipei\findobj\findobj\findobj\findobj.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.09
