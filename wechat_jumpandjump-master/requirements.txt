@@ -1,4 +1,0 @@
-attrdict
-
-pillow
-opencv-python

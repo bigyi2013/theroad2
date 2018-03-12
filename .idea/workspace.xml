@@ -10,7 +10,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2272680-20ab-4a6f-baa7-28e339dda71c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opencvsanjiao/testcolor.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfakaze.tlog/unsuccessfulbuild" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat_jumpandjump-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat_jumpandjump-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat_jumpandjump-master/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat_jumpandjump-master/jump.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat_jumpandjump-master/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat_jumpandjump-master/screen.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/Debug/akaze.exe" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/Debug/akaze.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/Debug/akaze.ilk" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/Debug/akaze.ilk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/Debug/akaze.pdb" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/Debug/akaze.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/akaze.sdf" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/akaze.sdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/akaze.v12.suo" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/akaze.v12.suo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/ipch/surf2-9710c0e/akaze-3741fcd8.ipch" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/ipch/surf2-9710c0e/akaze-3741fcd8.ipch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/akaze.obj" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/akaze.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/akaze.pch" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/akaze.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/stdafx.obj" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/stdafx.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/vc120.idb" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/vc120.idb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/vc120.pdb" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/vc120.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/Debug/surfakaze.exe" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/Debug/surfakaze.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/Debug/surfakaze.ilk" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/Debug/surfakaze.ilk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/Debug/surfakaze.pdb" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/Debug/surfakaze.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/ipch/surfgai-5eeffd99/surfakaze-44992b8.ipch" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/ipch/surfgai-5eeffd99/surfakaze-44992b8.ipch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfakaze.sdf" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfakaze.sdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfakaze.v12.suo" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfakaze.v12.suo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/stdafx.obj" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/stdafx.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfakaze.pch" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfakaze.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/vc120.idb" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/vc120.idb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/vc120.pdb" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/vc120.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/akaze.tlog/link.read.1.tlog" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/akaze.tlog/link.read.1.tlog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/surf2.log" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/Debug/surf2.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/akaze.cpp" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surf2/surf2/akaze.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfakaze.tlog/CL.write.1.tlog" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfakaze.tlog/CL.write.1.tlog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfakaze.tlog/link.read.1.tlog" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfakaze.tlog/link.read.1.tlog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfgai.log" afterPath="$PROJECT_DIR$/mobanpipei/findobj/surfandakaze/surfgai/Debug/surfgai.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencvsanjiao/yuanquan.py" afterPath="$PROJECT_DIR$/opencvsanjiao/yuanquan.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py" afterPath="$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencvsanjiao/zhixian.py" afterPath="$PROJECT_DIR$/opencvsanjiao/zhixian.py" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,18 +59,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/theroad2$zhengfangxing.coverage" NAME="zhengfangxing Coverage Results" MODIFIED="1516958576248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opencvsanjiao" />
-    <SUITE FILE_PATH="coverage/theroad2$zhixian.coverage" NAME="zhixian Coverage Results" MODIFIED="1516958658539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opencvsanjiao" />
-    <SUITE FILE_PATH="coverage/theroad2$yuanquan.coverage" NAME="yuanquan Coverage Results" MODIFIED="1516958479420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opencvsanjiao" />
-    <SUITE FILE_PATH="coverage/theroad2$huayuan.coverage" NAME="huayuan Coverage Results" MODIFIED="1517368687832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opencvsanjiao" />
+    <SUITE FILE_PATH="coverage/theroad2$zhengfangxing.coverage" NAME="zhengfangxing Coverage Results" MODIFIED="1520855543512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opencvsanjiao" />
+    <SUITE FILE_PATH="coverage/theroad2$zhixian.coverage" NAME="zhixian Coverage Results" MODIFIED="1520857241340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opencvsanjiao" />
+    <SUITE FILE_PATH="coverage/theroad2$yuanquan.coverage" NAME="yuanquan Coverage Results" MODIFIED="1520855980503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opencvsanjiao" />
+    <SUITE FILE_PATH="coverage/theroad2$huayuan.coverage" NAME="huayuan Coverage Results" MODIFIED="1520838002989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opencvsanjiao" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="yuanquan.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="3" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="81">
+              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -40,23 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="huayuan.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/opencvsanjiao/huayuan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zhengfangxing.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zhengfangxing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="19" column="90" lean-forward="false" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="90" />
+            <state relative-caret-position="146">
+              <caret line="15" column="43" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -64,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zhixian.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="zhixian.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="337">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -93,10 +119,11 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/opencvsanjiao/tuoyuan.py" />
-        <option value="$PROJECT_DIR$/opencvsanjiao/yuanquan.py" />
-        <option value="$PROJECT_DIR$/opencvsanjiao/zhixian.py" />
         <option value="$PROJECT_DIR$/opencvsanjiao/huayuan.py" />
+        <option value="$PROJECT_DIR$/opencvsanjiao/testcolor.py" />
+        <option value="$PROJECT_DIR$/opencvsanjiao/yuanquan.py" />
         <option value="$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py" />
+        <option value="$PROJECT_DIR$/opencvsanjiao/zhixian.py" />
       </list>
     </option>
   </component>
@@ -107,8 +134,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="295" />
-    <option name="y" value="-24" />
+    <option name="x" value="374" />
+    <option name="y" value="-15" />
     <option name="width" value="1054" />
     <option name="height" value="867" />
   </component>
@@ -148,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.huayuan">
+  <component name="RunManager" selected="Python.zhixian">
     <configuration name="huayuan" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,7 +194,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="tuoyuan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="testcolor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -180,7 +207,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opencvsanjiao/tuoyuan.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opencvsanjiao/testcolor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,19 +267,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.tuoyuan" />
-      <item index="1" class="java.lang.String" itemvalue="Python.yuanquan" />
-      <item index="2" class="java.lang.String" itemvalue="Python.zhengfangxing" />
-      <item index="3" class="java.lang.String" itemvalue="Python.zhixian" />
-      <item index="4" class="java.lang.String" itemvalue="Python.huayuan" />
+      <item index="0" class="java.lang.String" itemvalue="Python.yuanquan" />
+      <item index="1" class="java.lang.String" itemvalue="Python.zhengfangxing" />
+      <item index="2" class="java.lang.String" itemvalue="Python.zhixian" />
+      <item index="3" class="java.lang.String" itemvalue="Python.huayuan" />
+      <item index="4" class="java.lang.String" itemvalue="Python.testcolor" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.huayuan" />
-        <item index="1" class="java.lang.String" itemvalue="Python.zhixian" />
+        <item index="0" class="java.lang.String" itemvalue="Python.zhixian" />
+        <item index="1" class="java.lang.String" itemvalue="Python.yuanquan" />
         <item index="2" class="java.lang.String" itemvalue="Python.zhengfangxing" />
-        <item index="3" class="java.lang.String" itemvalue="Python.yuanquan" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tuoyuan" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testcolor" />
+        <item index="4" class="java.lang.String" itemvalue="Python.huayuan" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +338,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31233597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36220473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -368,6 +395,265 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/huayuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/huayuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/huayuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/huayuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/testcolor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/huayuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/huayuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="90" lean-forward="false" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="3" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
@@ -380,9 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -440,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,30 +808,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/testcolor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/opencvsanjiao/huayuan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="216">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/yuanquan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -560,8 +834,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhengfangxing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="19" column="90" lean-forward="false" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="90" />
+        <state relative-caret-position="146">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvsanjiao/zhixian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
