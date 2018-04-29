@@ -10,3 +10,9 @@ dist
 build
 # My configurations:
 *.jpg
+*.kdev4
+*.bmp
+*.idea
+*.mp4
+*.gz
+*.zip
