@@ -1,8 +1,0 @@
-﻿  stdafx.cpp
-c:\theroad\cpp\test5\test5\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-c:\theroad\cpp\test5\test5\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-c:\theroad\cpp\test5\test5\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  test5.cpp
-c:\theroad\cpp\test5\test5\test5.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  test5.vcxproj -> C:\theroad\cpp\test5\Debug\test5.exe
-  test5.vcxproj -> C:\theroad\cpp\test5\Debug\test5.pdb (Partial PDB)

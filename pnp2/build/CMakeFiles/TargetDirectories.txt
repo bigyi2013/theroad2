@@ -1,3 +1,0 @@
-/home/yehoo/projects/pnp2/build/CMakeFiles/edit_cache.dir
-/home/yehoo/projects/pnp2/build/CMakeFiles/rebuild_cache.dir
-/home/yehoo/projects/pnp2/build/CMakeFiles/pnp.dir

@@ -1,3 +1,0 @@
-/home/yehoo/projects/charuco/build/CMakeFiles/edit_cache.dir
-/home/yehoo/projects/charuco/build/CMakeFiles/rebuild_cache.dir
-/home/yehoo/projects/charuco/build/CMakeFiles/charuco.dir

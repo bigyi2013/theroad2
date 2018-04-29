@@ -1,7 +1,0 @@
-/home/yehoo/project/detcharuco/cmake-build-debug/CMakeFiles/install/strip.dir
-/home/yehoo/project/detcharuco/cmake-build-debug/CMakeFiles/install/local.dir
-/home/yehoo/project/detcharuco/cmake-build-debug/CMakeFiles/install.dir
-/home/yehoo/project/detcharuco/cmake-build-debug/CMakeFiles/list_install_components.dir
-/home/yehoo/project/detcharuco/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/yehoo/project/detcharuco/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/yehoo/project/detcharuco/cmake-build-debug/CMakeFiles/detcharuco.dir
