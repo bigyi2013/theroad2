@@ -1,0 +1,12 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# python
+*.so
+*.egg
+*.egg-info
+dist
+build
+# My configurations:
+*.jpg
