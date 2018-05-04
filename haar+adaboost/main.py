@@ -20,7 +20,7 @@ def haar1(x, y, w, h, img):
     sqmean = square / (w * h)
     varnormfactor = np.sqrt(abs(mean * mean - sqmean))
     # 白块减黑块
-    featurevalue = np.sum(img[a[2][0]:a[5][0], a[2][1]:a[5][1]]) - np.sum(img[a[0][0]:a[3][0], a[0][1]:a[0][1]])
+    featurevalue = np.sum(img[a[2][0]:a[5][0], a[2][1]:a[5][1]]) - np.sum(img[a[0][0]:a[3][0], a[0][1]:a[3][1]])
     normvalue = featurevalue / varnormfactor
     return normvalue
 
