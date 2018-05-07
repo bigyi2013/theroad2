@@ -1,0 +1,51 @@
+# 决定自己写个数据集，因为不管是感知器还是winnow
+# 能力都一般，所以对数据集的要求还是比较严格的。
+import numpy as np
+import matplotlib.pyplot as plt
+import time
+import math
+from matplotlib.animation import FuncAnimation
+
+
+def m():
+    W = np.array([-9, -7])
+    W0 = 3
+    # w=np.random.randint(-9,9,2)
+    X = np.random.random((100, 2)) * 2 - 1
+    y = Y = 2 * np.array(W.dot(X.T) >= W0) - 1
+    # w[0]*x1+w[1]*x2-5=0
+    A = np.where(Y == 1)
+    B = np.where(Y == -1)
+    print('W:', W, W0)
+    l = np.random.random((100, 2)) * 2 - 1
+    theta = 0.01
+    w0 = np.ones((1, X.shape[0]))
+    w = np.random.randint(1, 5, 3)
+    x = np.append(w0.T, X, axis=1)
+    while True:
+        num = 0
+        for i in range(x.shape[0]):
+            a = x[i, :]
+            cy = y[i]
+            hy = w.dot(a)
+            # 对 sign进行不同的赋值，可以改变权重更新的方式。
+            sign = (np.sign(a) + 1) / 2
+            #sign = np.sign(a)
+            if (cy == 1 and hy < 0) or (cy == -1 and hy > 0):
+                # w = w + theta * sign
+                # 改变theta，可以改变更新速度
+                #这种更新方式，能最大速度的更新权重，而且能保证找到超平面（如果有）
+                w = w + (cy - hy) * sign
+                num = num + 1
+                print('change:', num)
+        print('w;', w)
+        # 红色是1
+        plt.scatter(X[A[0], 0], X[A[0], 1], c='r')
+        # 蓝色是-1
+        plt.scatter(X[B[0], 0], X[B[0], 1], c='b')
+        plt.plot(X[:, 0], (-3 - 9 * X[:, 0]) / 7, label='linear')
+        plt.plot(l[:, 0], (-w[0] - w[1] * l[:, 0]) / w[2], c='g')
+        plt.show()
+
+
+m()
