@@ -8,9 +8,9 @@ from matplotlib.animation import FuncAnimation
 
 
 def m():
-    W = np.array([-9, -7])
+    # W = np.array([-9, -7])
     W0 = 3
-    # w=np.random.randint(-9,9,2)
+    W = np.random.randint(-9, 9, 2)
     X = np.random.random((100, 2)) * 2 - 1
     y = Y = 2 * np.array(W.dot(X.T) >= W0) - 1
     # w[0]*x1+w[1]*x2-5=0
@@ -29,13 +29,15 @@ def m():
             cy = y[i]
             hy = w.dot(a)
             # 对 sign进行不同的赋值，可以改变权重更新的方式。
-            sign = (np.sign(a) + 1) / 2
-            #sign = np.sign(a)
+            # sign = (np.sign(a) + 1) / 2
+            sign = np.sign(a)
             if (cy == 1 and hy < 0) or (cy == -1 and hy > 0):
                 # w = w + theta * sign
                 # 改变theta，可以改变更新速度
-                #这种更新方式，能最大速度的更新权重，而且能保证找到超平面（如果有）
-                w = w + (cy - hy) * sign
+                # 这种更新方式，有时候找不到超平面，我把它保留的原因是这个更新方法和逻辑回归的更新方法类似，应该是巧合。
+                # w = w + (cy - hy) * sign
+                # 这种更新方式，能最大速度的更新权重，而且能保证找到超平面（如果有)
+                w = w + cy * a
                 num = num + 1
                 print('change:', num)
         print('w;', w)
@@ -43,7 +45,7 @@ def m():
         plt.scatter(X[A[0], 0], X[A[0], 1], c='r')
         # 蓝色是-1
         plt.scatter(X[B[0], 0], X[B[0], 1], c='b')
-        plt.plot(X[:, 0], (-3 - 9 * X[:, 0]) / 7, label='linear')
+        plt.plot(X[:, 0], (W0 - W[0] * X[:, 0]) / W[1], c='#FFC0CB')
         plt.plot(l[:, 0], (-w[0] - w[1] * l[:, 0]) / w[2], c='g')
         plt.show()
 
