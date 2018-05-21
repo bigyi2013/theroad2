@@ -1,3 +1,4 @@
+# 虽然名字是logistic，但是内容是svm，^-^
 from random import randint
 import matplotlib.pyplot as plt
 import numpy as np
