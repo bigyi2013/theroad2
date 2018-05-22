@@ -19,3 +19,10 @@ build
 *.zip
 *.exe
 Debug
+*.sln
+*.rc2
+*.vcxproj
+*.filters
+*.rc
+*.aps
+robot/yhcxp3.0/.vs/yhcxp/v14/.suo
