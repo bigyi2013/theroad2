@@ -19,6 +19,6 @@ if __name__ == '__main__':
         print("open failed")
 
     while True:
-        data =recv(serial)
+        data=recv(serial)
         if data != b'' :
             print("receive : ",data)

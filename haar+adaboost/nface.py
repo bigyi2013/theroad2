@@ -17,10 +17,11 @@ for i in ['01','02','03','04','05','06','07','08','09','10']:
                 a = np.random.randint(50, 100, 4)
                 if int(a[0])>50 and  int(a[1])>50 and a[2]-int(a[0])>0 and a[3]-int(a[1])>0:
                     Face=img[a[2]-20:a[2]+20,a[3]-20:a[3]+20]
-                    Face24=cv2.resize(Face,(24,24))
+                   # Face24=cv2.resize(Face,(24,24)
+                    Face64=cv2.resize(Face,(64,128))
                     #Face150=cv2.resize(Face24,(150,150))
                     #cv2.imshow('face',Face)
-                    cv2.imwrite(str('./nface/')+str(num)+'.jpg',Face)
+                    cv2.imwrite(str('./nface64/')+str(num)+'.jpg',Face64)
                     num+=1
                     print('Face+')
                 cv2.waitKey()
