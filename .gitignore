@@ -18,6 +18,7 @@ build
 *.gz
 *.zip
 *.exe
+venv
 Debug
 *.sln
 *.rc2
@@ -30,3 +31,5 @@ robot/yhcxp3.0/.vs/yhcxp/v14/.suo
 *.mat
 *.tmw
 *.autosave
+*.pyd
+*.pyc

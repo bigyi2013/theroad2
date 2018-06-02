@@ -1,0 +1,14 @@
+{% extends "layout/layout.html" %}
+{% block title %}hello{% endblockblock %}
+{% block head %}
+  {{ super() }}{#渲染父模板#}
+      <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block header %}
+    <h1> Welcome</h1>
+{% endblock %}
+{% block content %}
+    <p class="important"> 你好啊</p>
+{% endblock %}
