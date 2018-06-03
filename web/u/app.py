@@ -1,7 +1,9 @@
-from flask import Flask
-from flask import render_template
+import os
+import sqlite3
+from flask import Flask, request, session, g, redirect, url_for, abort,\
+    render_template, flash
+from db import init_db
 app = Flask(__name__)
-from flask import request
 
 @app.errorhandler(404)
 def page_not_found(error):
@@ -14,5 +16,7 @@ def index():
 @app.route('/hello/<name>')
 def hello(name=None):
     return render_template('hello.html', name=name)
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
+
