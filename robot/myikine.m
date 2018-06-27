@@ -2,11 +2,7 @@ L1=Link('d', 0.08, 'a', 0, 'alpha', pi/2);%L1ÎªÁ¬¸Ë1£¬¡®a'ÎªÁ¬¸Ë1³¤¶È£¬¡¯d'Îª¹Ø½
 L2=Link('d',0,'a',0.3,'alpha',-pi/2);
 L3=Link('d',0,'a',0,'alpha',pi/2);
 L4=Link('d',0.17+0.07+0.06,'a',0,'alpha',pi/2);
-%L5=Link('d',0,'a',0.06,'alpha',0);
 roldm=SerialLink([L1,L2,L3,L4],'name','oldm');
 roldm.links(1,3).offset=pi/2;%Éè¶¨¹Ø½Ú3³õÊ¼Î»ÖÃ
-%roldm.links(1,1).offset=-pi/2;%Éè¶¨¹Ø½Ú1³õÊ¼Î»ÖÃ
-%roldm.links(1,4).offset=pi/2;%Éè¶¨¹Ø½Ú4³õÊ¼Î»ÖÃ
-%%roldm.links(1,5).offset=pi/2;%Éè¶¨¹Ø½Ú5³õÊ¼Î»ÖÃ
 roldm.base=transl(0,0.23,0)*trotx(pi/2);%Éè¶¨¹Ø½Ú1Óë»ù×ø±êÏµÏà¶ÔÎ»ÖÃ
 roldm.teach([0 0 0 0]);
