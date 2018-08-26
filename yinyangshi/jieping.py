@@ -1,6 +1,6 @@
 import win32gui, win32ui, win32con, win32api
 import cv2
-def window_capture(j):
+def window_capture():
     hwnd = 0  # 窗口的编号，0号表示当前活跃窗口
     # 根据窗口句柄获取窗口的设备上下文DC（Divice Context）
     hwndDC = win32gui.GetWindowDC(hwnd)
@@ -18,11 +18,10 @@ def window_capture(j):
     # 为bitmap开辟空间
     saveBitMap.CreateCompatibleBitmap(mfcDC, w, h)
     # 高度saveDC，将截图保存到saveBitmap中
-    for i in range(j):
-        print(i)
-        saveDC.SelectObject(saveBitMap)
-        # 截取从左上角（0，0）长宽为（w，h）的图片
-        saveDC.BitBlt((0, 0), (w, h), mfcDC, (0, 0), win32con.SRCCOPY)
-        saveBitMap.SaveBitmapFile(saveDC, "h"+str(i)+".jpg")
+    saveDC.SelectObject(saveBitMap)
+    # 截取从左上角（0，0）长宽为（w，h）的图片
+    saveDC.BitBlt((0, 0), (w, h), mfcDC, (0, 0), win32con.SRCCOPY)
+    saveBitMap.SaveBitmapFile(saveDC, "save.jpg")
 
-window_capture(500)
+if __name__ == '__main__':
+    window_capture()
