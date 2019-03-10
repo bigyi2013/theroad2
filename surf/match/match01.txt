@@ -1,0 +1,114 @@
+#include <iostream>
+#include <stdio.h>
+#include <opencv2\core\core.hpp>
+#include <opencv2\highgui\highgui.hpp>
+#include <opencv2\imgproc\imgproc.hpp>
+#include <opencv2\nonfree\features2d.hpp>
+#include <opencv2\calib3d\calib3d.hpp>
+
+using namespace std;
+using namespace cv;
+
+int main()
+{
+    Mat image_object = imread("match_src.jpg", IMREAD_GRAYSCALE);
+    Mat image_scene = imread("match_dst.jpg", IMREAD_GRAYSCALE);
+
+    //判断图像是否加载成功
+    if (image_object.empty() || image_scene.empty())
+    {
+        cout << "图像加载失败";
+        return -1;
+    }
+    else
+        cout << "图像加载成功..." << endl << endl;
+
+    //检测特征点
+    const int minHessian = 700;
+    SurfFeatureDetector detector(minHessian);
+    vector<KeyPoint>keypoints_object, keypoints_scene;
+    detector.detect(image_object, keypoints_object);
+    detector.detect(image_scene, keypoints_scene);
+
+    //计算特征点描述子
+    SurfDescriptorExtractor extractor;
+    Mat descriptors_object, descriptors_scene;
+    extractor.compute(image_object, keypoints_object, descriptors_object);
+    extractor.compute(image_scene, keypoints_scene, descriptors_scene);
+
+    //使用FLANN进行特征点匹配
+    FlannBasedMatcher matcher;
+    vector<DMatch>matches;
+    matcher.match(descriptors_object, descriptors_scene, matches);
+
+    //计算匹配点之间最大和最小距离
+    double max_dist = 0;
+    double min_dist = 100;
+    for (int i = 0; i < descriptors_object.rows; i++)
+    {
+        double dist = matches[i].distance;
+        if (dist < min_dist)
+        {
+            min_dist = dist;
+        }
+        else if (dist > max_dist)
+        {
+            max_dist = dist;
+        }
+    }
+    printf("Max dist: %f \n", max_dist);
+    printf("Min dist: %f \n", min_dist);
+
+    //绘制“好”的匹配点
+    vector<DMatch>good_matches;
+    for (int i = 0; i < descriptors_object.rows; i++)
+    {
+        if (matches[i].distance<2*min_dist)
+        {
+            good_matches.push_back(matches[i]);
+        }
+    }
+    Mat image_matches;
+    drawMatches(image_object, keypoints_object, image_scene, keypoints_scene, good_matches, image_matches,
+        Scalar::all(-1), Scalar::all(-1), vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS);
+
+    //定位“好”的匹配点
+    vector<Point2f> obj;
+    vector<Point2f> scene;
+    for (int i = 0; i < good_matches.size(); i++)
+    {
+        //DMathch类型中queryIdx是指match中第一个数组的索引,keyPoint类型中pt指的是当前点坐标
+        obj.push_back(keypoints_object[good_matches[i].queryIdx].pt);
+        scene.push_back(keypoints_scene[good_matches[i].trainIdx].pt);
+    }
+
+    Mat H = findHomography(obj, scene, CV_RANSAC);
+    vector<Point2f> obj_corners(4), scene_corners(4);
+    obj_corners[0] = cvPoint(0, 0);
+    obj_corners[1] = cvPoint(image_object.cols, 0);
+    obj_corners[2] = cvPoint(image_object.cols, image_object.rows);
+    obj_corners[3] = cvPoint(0, image_object.rows);
+
+    perspectiveTransform(obj_corners, scene_corners, H);
+
+    //绘制角点之间的直线
+   // line(image_matches, scene_corners[0] + Point2f(image_object.cols, 0),
+        scene_corners[1] + Point2f(image_object.cols, 0), Scalar(0, 0, 255), 2);
+    //line(image_matches, scene_corners[1] + Point2f(image_object.cols, 0),
+        scene_corners[2] + Point2f(image_object.cols, 0), Scalar(0, 0, 255), 2);
+    //line(image_matches, scene_corners[2] + Point2f(image_object.cols, 0),
+        scene_corners[3] + Point2f(image_object.cols, 0), Scalar(0, 0, 255), 2);
+    //line(image_matches, scene_corners[3] + Point2f(image_object.cols, 0),
+        scene_corners[0] + Point2f(image_object.cols, 0), Scalar(0, 0, 255), 2);
+
+    //输出图像
+    namedWindow("匹配图像", WINDOW_AUTOSIZE);
+    imshow("匹配图像", image_matches);
+    waitKey(0);
+
+    return 0;
+--------------------- 
+作者：梧桐栖鸦 
+来源：CSDN 
+原文：https://blog.csdn.net/keith_bb/article/details/70239661 
+版权声明：本文为博主原创文章，转载请附上博文链接！

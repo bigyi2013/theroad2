@@ -33,3 +33,15 @@ robot/yhcxp3.0/.vs/yhcxp/v14/.suo
 *.autosave
 *.pyd
 *.pyc
+*.png
+*.gif
+detecter/my_elas/.vs/my_elas/v14/.suo
+*.pgm
+*.ipch
+*.db
+detecter/surf_orb_sift/.vs/surf_orb_sift/v14/.suo
+surf/match/.vs/match/v14/.suo
+surf/mysurf/.vs/mysurf/v14/.suo
+*.suo
+*.ahk
+*.dll
